@@ -1,0 +1,11 @@
+<main class="directive-component">
+  <h1>Directive Component</h1>
+
+  <div class="options">
+    @for (option of colorOptions; track option) {
+      <button type="button" (click)="selectColor(option)">{{ option }}</button>
+    }
+  </div>
+
+  <p [appColor]="selectedColor()">This text color changes based on the selected option.</p>
+</main>
